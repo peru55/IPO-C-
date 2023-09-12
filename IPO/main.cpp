@@ -12,6 +12,7 @@
 #include <utility>
 #include <optional>
 #include <initializer_list>
+#include <stdexcept>
 
 using namespace std;
 
@@ -24,23 +25,70 @@ using namespace std;
 //    return total;
 //}
 
-struct Employee {
-    char FirstInitial;
-    char LastInitial;
-    int employeeNumber;
-//    default init value
-    int salary {75'000};
-};
+//struct Employee {
+//    char FirstInitial;
+//    char LastInitial;
+//    int employeeNumber;
+////    default init value
+//    int salary {75'000};
+//};
+
+//void printString(const string & myString)
+//{
+//    cout << myString << endl;
+//};
+
+//NOTE the difference in pointers and reference
+
+//void swap(int * first, int * second)
+//{
+//    int temp { *first};
+//    *first = *second;
+//    *second = temp;
+//};
+
+//void swap(int & first, int & second)
+//{
+//    int temp { first};
+//    first = second;
+//    second = temp;
+//};
+
+//struct OddsAndEvens {
+//    vector<int> odds, evens;
+//};
+//
+//OddsAndEvens sepOddsAndEvens(const vector<int>& arr)
+//{
+//    vector<int> odds, evens;
+//    for(int i : arr) {
+//        if (i % 2 == 1){
+//            odds.push_back(i);
+//        } else {
+//            evens.push_back(i);
+//        }
+//    }
+//    return OddsAndEvens{ .odds = odds, .evens= evens};
+//}
+
+//exception handling
+//double divideNumbers( double numerator, double denominator){
+//    if (denominator == 0) {
+//        throw invalid_argument( "cannot divide by 0");
+//    }
+//    return numerator/denominator;
+//}
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
     
 //    initializing a vector
-    vector<int> myVector {11, 22};
+//    vector<int> myVector {11, 22};
     
 //    adding value to a vector
-    myVector.push_back(33);
+//    myVector.push_back(33);
     
 //    cout << "my Vector " << myVector << endl;
 //    cout << format("1st element: {} ", myVector[1]) << endl;
@@ -131,7 +179,7 @@ int main(int argc, const char * argv[]) {
 //    cout << d << endl;
 //    Employee myEmployee {'j', 's', 600, 7500};
     
-//    dsignated initialization
+//    designated initialization
     
 //    Employee myEmployee {
 //        .FirstInitial = 'j';
@@ -145,6 +193,7 @@ int main(int argc, const char * argv[]) {
 //    pInt = new int;
 //    changing the address of pointer
 //    *pInt = 8;
+//    cout << *pInt << endl;
 //    deallocating from memory
 //    delete pInt;
 //    pInt = nullptr;
@@ -153,10 +202,11 @@ int main(int argc, const char * argv[]) {
 //    & address of or im borrowing i's value i still retains ownership
 //    int * myInt {&i};
 //    * yield the value of what you are borrowing
-//    cout << *myInt << endl;
+//    cout << myInt << endl;
     
 //    dynamically allocating array
 //    int arrSize {8};
+//    NOTE new[] and delete [] for arrays
 //    int * myVariableSizedArr { new int[arrSize]};
 //    myVariableSizedArr[2] = 1;
 //    cout << myVariableSizedArr[2] << endl;
@@ -170,8 +220,25 @@ int main(int argc, const char * argv[]) {
     
 //    int const * const ip {nullptr};
     
+//    string someString {"Hello World!"};
+//    printString(someString);
+//    printString("Hello World");
     
+//    int x {3}, y{4};
+//    swap(x, y);
+//    cout << swap(x, y) << endl;
+    
+//    vector<int> VecUnsplit {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+//    auto oddsAndEvens {sepOddsAndEvens(VecUnsplit)};
+//    oddsAndEvens.evens;
 
+//    eexception handling cont'd
+//    try {
+//        cout << divideNumbers(4.0, 0.0) << endl;
+//    } catch (const invalid_argument & exception){
+//        cout << "Exception caught: " << exception.what() << endl;
+//    }
+    
     
     return 0;
 }
