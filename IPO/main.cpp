@@ -240,5 +240,27 @@ int main(int argc, const char * argv[]) {
 //    }
     
     
+//    dynamic arrays
+    
+//    int *dynamicArray;
+//    int count;
+//    cout << "how many elements would you like:";
+//    cin >> count;
+//    dynamicArray = new int[count];
+//
+//    for (int n = 0 ; n < count ; n++){
+//        cout << "input your element:";
+//        cin >> dynamicArray[n];
+//    };
+//
+//    cout << "These are your elements\n";
+//
+//    for (int i = 0 ; i < count ; i++){
+//        cout << dynamicArray[i] << endl;
+//    };
+//
+//    delete [] dynamicArray;
+    
+    
     return 0;
 }
