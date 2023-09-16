@@ -13,6 +13,7 @@
 #include <optional>
 #include <initializer_list>
 #include <stdexcept>
+#include <unordered_map>
 
 using namespace std;
 
@@ -79,16 +80,54 @@ using namespace std;
 //    return numerator/denominator;
 //}
 
+//void func(const string & s){
+//    cout << "Hello world\n";
+//}
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+//    std::cout << "Hello, World!\n";
     
 //    initializing a vector
 //    vector<int> myVector {11, 22};
     
+    
 //    adding value to a vector
 //    myVector.push_back(33);
+//
+//    cout << "-----Range Based for loop-------\n";
+//
+//    for (int i : myVector){
+//        cout << i << endl;
+//    }
+//
+//    cout << "--------Normal for loop---------\n";
+//
+//    for (int n = 0 ; n < myVector.size(); n++){
+//        cout << myVector[n] << endl;
+//    }
+//
+//    cout << "--------Vector Iterator method---------\n";
+//
+//    for (vector<int>::iterator it = myVector.begin(); it != myVector.end(); it ++){
+//        cout << *it << endl;
+//    }
+//
+//    cout << "-------Iterating over an Unordered map--------\n";
+//
+//    using scoremap = unordered_map<string, int>;
+//    scoremap map;
+//
+//    map["peru"] = 5;
+//    map["emanuel"] = 1;
+//
+//    for (scoremap::const_iterator m = map.begin(); m != map.end(); m++){
+//        auto& key = m -> first;
+//        auto& value = m -> second;
+//
+//        cout << key << " = " << value << endl;
+//    }
     
 //    cout << "my Vector " << myVector << endl;
 //    cout << format("1st element: {} ", myVector[1]) << endl;
@@ -241,16 +280,17 @@ int main(int argc, const char * argv[]) {
     
     
 //    dynamic arrays
-    
-//    int *dynamicArray;
+//
+//    int* dynamicArray;
 //    int count;
 //    cout << "how many elements would you like:";
 //    cin >> count;
-//    dynamicArray = new int[count];
+//    int* dynamicArray {new int[count]};
 //
 //    for (int n = 0 ; n < count ; n++){
 //        cout << "input your element:";
 //        cin >> dynamicArray[n];
+//        cout << "\n";
 //    };
 //
 //    cout << "These are your elements\n";
@@ -260,6 +300,14 @@ int main(int argc, const char * argv[]) {
 //    };
 //
 //    delete [] dynamicArray;
+//    dynamicArray = nullptr;
+    
+//    pointers - variable that holds a memory address (& - address of)
+//    int number {5};
+//    int* pnumber;
+//    pnumber = &number;
+//    cout << *pnumber << endl;
+    
     
     
     return 0;
